@@ -12,3 +12,9 @@ i{
   color: rgb(255, 106, 19);
 }
 
+@media only screen and (max-width: 600px){
+  .ajuste-contato{
+    display: flex;
+    text-align: center;
+  }
+}
