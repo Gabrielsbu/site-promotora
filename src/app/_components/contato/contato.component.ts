@@ -12,4 +12,7 @@ export class ContatoComponent implements OnInit {
   ngOnInit() {
   }
 
+  EnviarForm() {
+    alert('sucess');
+  }
 }
