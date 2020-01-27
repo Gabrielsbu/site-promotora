@@ -1,1 +1,23 @@
-<p>funcionalidades works!</p>
+<div class="container">
+    <ng-template #content let-modal>
+
+        
+        <div class="ajuste-close">
+            <button type="button" class="close cor-titulo" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <div class="modal-body">
+            <app-submenu></app-submenu>
+        </div>
+       
+    
+    </ng-template>
+  
+    <button class="btn button-funcionalidades mb-2 mr-2" (click)="openXl(content)">Funcionalidades</button>
+  
+  
+</div>
+  
+  

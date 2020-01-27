@@ -1,7 +1,16 @@
 <div class="container">
-  <div [@bounceInLeft]="bounceInLeft">
-    <img style="width: 200px; " src="../../../assets/1024px-Yin_yang.svg.png">
-  </div>
+  <ng-template #content let-modal>
+
+    <div class="modal-body">
+      <app-submenu></app-submenu>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Fechar</button>
+    </div>
+  </ng-template>
+
+  <button class="btn button-funcionalidades mb-2 mr-2" (click)="openXl(content)">Funcionalidades</button>
+
 
 </div>
 

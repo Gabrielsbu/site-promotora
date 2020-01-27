@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
   selector: 'app-funcionalidades',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FuncionalidadesComponent implements OnInit {
 
-  constructor() { }
+  closeResult: string;
+  bounceInLeft: any;
+  numero: number;
+  constructor(private modalService: NgbModal) {}
 
   ngOnInit() {
+  }
+
+  openXl(content) {
+    this.modalService.open(content, { size: 'xl' });
   }
 
 }

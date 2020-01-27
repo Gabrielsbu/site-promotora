@@ -1,18 +1,19 @@
 
+<div class="col">
+  <div class="ajuste-contato">
+    <h1>CONTATO</h1>
+  </div>
+  <div class="ajuste-contato mb-5">
+    <p>Dúvidas, sugestões ou elogios, entre em contato pelo formulário a baixo</p>
+  </div>
+
+</div>
+
 <form class="row">
 
   <div class="col-xl-9">
     <div class="form-row">
-        <div class="col-xl-9">
-          <div class="ajuste-contato">
-            <h1>CONTATO</h1>
-          </div>
-          <div class="ajuste-contato mb-5">
-            <p>Dúvidas, sugestões ou elogios, entre em contato pelo formulário a baixo</p>
-          </div>
-
-        </div>
-
+        
       <div class="form-group col-md-4">
         <label for="inputEmail4">Nome</label>
         <input type="text" class="form-control" id="inputEmail4" placeholder="Informe seu nome">
@@ -51,16 +52,31 @@
         <textarea placeholder="Deixe sua mensagem" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
     </div>
+  
+    <div class="form-row">
+      <div class="col-xl-12">
+        
+       
+        <ngb-rating [(rate)]="currentRate">
+          
+          <ng-template let-fill="fill" let-index="index"> 
+            <span class="star" [class.filled]="fill === 100" [class.bad]="index < 2" [class.good]="index > 4">&#9733;</span>
+          </ng-template>
+        </ngb-rating>
+        
+        <pre>Rate: <b>{{currentRate}}</b></pre>
+      </div>
+   </div>
+  </div>
+      <div class="form-row">
+        <button type="submit" class="btn btn-success mb-2 ml-1" (click)=" EnviarForm()">Enviar Mensagem</button>
+      </div>
+    
   </div>
 
-     <div class="form-row">
-      <button type="submit" class="btn btn-success mb-2 ml-1" (click)=" EnviarForm()">Enviar Mensagem</button>
-     </div>
-
-  </div>
 
   <div class="col-xl-3 ">
-    <div class="card largura-card " [@bounceInRight]="bounceInRight" >
+    <div class="card largura-card "  data-aos="fade-left" data-aos-delay="5000" >
       <img class="card-img-top" src="../../../assets/file.jpg">
       <div class="card-body">
         <h5 class="card-title">INFORMAÇÕES</h5>
@@ -70,10 +86,10 @@
         <p class="card-text"><i class="fas fa-globe"></i> f5promotora.com.br</p>
 
       </div>
-
     </div>
-
   </div>
+
+  
 </form>
 
 <hr>

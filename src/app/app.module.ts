@@ -16,6 +16,8 @@ import { SejaParceiroComponent } from './_components/seja-parceiro/seja-parceiro
 import { HomeComponent } from './_components/home/home.component';
 import { BlogComponent } from './_components/blog/blog.component';
 import { FuncionalidadesComponent } from './_components/funcionalidades/funcionalidades.component';
+import { SiderbarComponent } from './_components/siderbar/siderbar.component';
+import { SubmenuComponent } from './_components/submenu/submenu.component';
 
 
 @NgModule({
@@ -31,6 +33,8 @@ import { FuncionalidadesComponent } from './_components/funcionalidades/funciona
     HomeComponent,
     BlogComponent,
     FuncionalidadesComponent,
+    SiderbarComponent,
+    SubmenuComponent,
 
 
   ],

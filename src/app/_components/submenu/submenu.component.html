@@ -1,0 +1,61 @@
+<div class="ajuste">
+<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+    
+    <li [ngbNavItem]="1">
+      <a class="btn button-funcionalidades" href="http://187.19.199.158:8080/ConsignaWeb/Account/Login.aspx">FORMULÁRIOS</a>
+      <ng-template ngbNavContent>
+        <div class="row">
+          <div class="col-md-12 ">
+            <img src="../../../assets/shutterstock_77276413.jpg" alt="foto-funcionalidades">
+          </div>
+        </div>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="2">
+      <a class="btn button-funcionalidades" href="http://187.19.199.158:8080/ConsignaWeb/Account/Login.aspx">FORMALIZAÇÃO</a>
+      <ng-template ngbNavContent>
+       
+      </ng-template>
+    </li>
+
+    <li [ngbNavItem]="3">
+        <a class="btn button-funcionalidades" href="http://187.19.199.158:8080/ConsignaWeb/Account/Login.aspx">DOWNLOADS</a>
+        <ng-template ngbNavContent>
+
+        </ng-template>
+      </li>
+
+      <li [ngbNavItem]="4 ">
+        <a class="btn button-funcionalidades" href="http://187.19.199.158:8080/ConsignaWeb/Account/Login.aspx">SIMULADOR</a>
+        <ng-template ngbNavContent>
+
+        </ng-template>
+      </li>
+
+      <li [ngbNavItem]="5">
+        <a class="btn button-funcionalidades" href="http://187.19.199.158:8080/ConsignaWeb/Account/Login.aspx">LINKS</a>
+        <ng-template ngbNavContent>
+
+        </ng-template>
+      </li>
+
+      <li [ngbNavItem]="6">
+        <a class="btn button-funcionalidades" href="http://187.19.199.158:8080/ConsignaWeb/Account/Login.aspx">CANAIS CORPORATIVOS</a>
+        <ng-template ngbNavContent>
+    
+        </ng-template>
+      </li>
+
+      <li [ngbNavItem]="7">
+        <a class="btn button-funcionalidades" href="http://187.19.199.158:8080/ConsignaWeb/Account/Login.aspx">SERVICE DESK</a>
+        <ng-template ngbNavContent>
+
+        </ng-template>
+      </li>
+  </ul>
+
+</div>
+  
+  <div [ngbNavOutlet]="nav" class="mt-2"></div>
+  
+

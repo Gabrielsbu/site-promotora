@@ -1,6 +1,6 @@
 <header class="header-color">
 
-    <nav class="navbar navbar-expand-md">
+    <nav class="navbar navbar-expand-md " >
       <a class="navbar-brand" routerLink="/home"><img src="../../../assets/logo-paginas-do-site.png" alt="Logo"></a>
 
       <button type="button" class="navbar-toggler button-expanded" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
@@ -29,35 +29,16 @@
             <a class="nav-link" (click)="isCollapsed = !isCollapsed" routerLink="/contato">CONTATO</a>
           </li>
 
-          <li>
-
-            <div ngbDropdown >
-              <button class=" btn button-funcionalidades" ngbDropdownToggle>FUNCIONALIDADES</button>
-              <div class="mr-1 cor-dropdown" ngbDropdownMenu>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSycXPd5T2EdepChPUM1Y35LcCZpVNff_lyZS9e4vkpaqVAw/closedform" target="_blank" style="background-color: transparent; cursor: pointer" ngbDropdownItem><i class="far fa-file"></i> Formulários</a>
-                <a href="http://f5promotora.com.br/formalizacao" target="_blank" style="background-color: transparent; cursor: pointer" ngbDropdownItem><i class="far fa-check-square"></i> Formalização</a>
-                <a href="http://f5promotora.com.br/downloads" target="_blank" style="background-color: transparent; cursor: pointer" ngbDropdownItem><i class="far fa-file-pdf"></i> Downloads</a>
-                <a href="http://f5promotora.com.br/f5-simulador/" target="_blank" style="background-color: transparent; cursor: pointer" ngbDropdownItem><i class="far fa-user"></i> Simulador</a>
-                <a href="http://f5promotora.com.br/links" target="_blank" style="background-color: transparent; cursor: pointer" ngbDropdownItem><i class="fas fa-link"></i> Links</a>
-                <a href="http://f5promotora.com.br/canais-corporativos" target="_blank" style="background-color: transparent; cursor: pointer" ngbDropdownItem><i class="fas fa-users"></i> Canais Corporativos</a>
-                <a href="http://servicedesk.f5promotora.com.br/otrs/customer.pl" target="_blank" style="background-color: transparent; cursor: pointer" ngbDropdownItem><i class="fas fa-phone-volume"></i> Service Desk</a>
-              </div>
-            </div>
-          </li>
-
-
           <li class="navbar-item">
-            <div [@bounceInDown]="bounceInDown">
-            <button class="button-parceiro">
-              <a class="nav-link" routerLink="/seja-parceiro">SEJA PARCEIRO</a>
-            </button>
-          </div>
+            <div><a class="nav-link" routerLink="/seja-parceiro">SEJA PARCEIRO</a></div>
           </li>
 
+          <li>
+            <app-funcionalidades></app-funcionalidades>
+          
+          </li>
+          
         </ul>
-
-
-
 
       </div>
 

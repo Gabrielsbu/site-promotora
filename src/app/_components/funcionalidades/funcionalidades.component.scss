@@ -1,0 +1,37 @@
+.alinhar-centro{
+    text-align: center;
+  }
+  
+  h4{
+    display: flex;
+    text-align: center;
+  }
+  .button-funcionalidades{
+    border:none;
+    width: 180px;
+    height: 40px;
+    border-radius: 50px;
+    background: linear-gradient(to right, rgb(255,106,19), rgb(255,221, 0));
+    color: #fff;
+  
+  }
+  
+  .button-funcionalidades:focus{
+   box-shadow: none;
+  }
+  
+  .img-back{
+    background-image: url('../../../assets/Background-4.jpg' );
+    background-repeat: no-repeat;
+  
+  }
+
+  .ajuste-close{
+      display: flex;
+      margin: 20px 20px;
+      
+      justify-content: flex-end;
+  }
+  
+
+  

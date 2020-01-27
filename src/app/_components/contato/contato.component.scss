@@ -12,6 +12,31 @@ i{
   color: rgb(255, 106, 19);
 }
 
+.star {
+  font-size: 30px;
+  color: #b0c4de;
+}
+.filled {
+  color: #1e90ff;
+}
+.bad {
+  color: #deb0b0;
+}
+.filled.bad {
+  color: #ff1e1e;
+}
+
+.good{
+  color: rgba(0, 160, 27, 0.973)
+}
+.filled.good{
+  color: green;
+}
+
+ngb-rating:focus{
+  box-shadow: none;
+}
+
 @media only screen and (max-width: 600px){
   .ajuste-contato{
     display: flex;

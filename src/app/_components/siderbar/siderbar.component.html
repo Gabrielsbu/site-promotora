@@ -1,0 +1,77 @@
+<div class="wrapper">
+    <nav id="sidebar">
+        <button type="button" class="navbar-toggler button-expanded" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="sidebar">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <div class="sidebar-header">
+            <h3>Funcionalidades</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+
+            <p>Dashboard</p>
+          
+
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">Home1</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Home2</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Home3</a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#pageSubmenu" data-toggle= "collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">page1</a>
+                    </li>
+
+                    <li>
+                        <a href="#">page2</a>
+                    </li>
+
+                    <li>
+                        <a href="#">page3</a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Services</a>
+            </li>
+
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+
+        </ul>
+
+        <ul class="list-unstyled CTAs">
+            <li>
+                <a href="#" class="download">Download code</a>
+            </li>
+
+            <li>
+                <a href="#" class="article">Article</a>
+            </li>
+        </ul>
+    </nav>
+
+
+</div>

@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { trigger, transition, useAnimation } from '@angular/animations';
 import { bounceInDown } from 'ng-animate';
-import { NgbDropdown} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-header',
@@ -15,13 +15,18 @@ import { NgbDropdown} from '@ng-bootstrap/ng-bootstrap';
   ],
 })
 export class HeaderComponent implements OnInit {
+  closeResult: string;
   bounceInDown: any;
   faBars = faBars;
   public isCollapsed = true;
 
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit() {
+  }
+
+  openXl(content) {
+    this.modalService.open(content, { size: 'xl' });
   }
 
 }
