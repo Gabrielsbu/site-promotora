@@ -1,11 +1,16 @@
 <div class="container">
     <ng-template #content let-modal>
 
-       <div class="ajuste-close">
-            <button type="button" class="close cor-titulo" aria-label="Close" (click)="modal.dismiss('Cross click')">
-              <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
+ 
+           <div class="ajuste-close">
+                
+                <a routerLinkActive routerLink="/home"><img src="../../../assets/logo-paginas-do-site.png"></a>
+                <h4 class="mt-5" >MAIS SERVIÇOS PARA VOCÊ </h4>
+                <button type="button" class="close cor-titulo" (click)="modal.dismiss('Cross click')">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        
 
         <div class="modal-body modal-color">
             <app-submenu></app-submenu>

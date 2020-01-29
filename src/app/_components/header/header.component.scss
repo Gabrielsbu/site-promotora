@@ -9,12 +9,13 @@
 
 
 a:hover{
-  color: rgb(255, 106, 19);
-  background: transparent;
+  color: rgb(0, 0, 0);
+  background: rgba(255, 106, 0, 0.8);
 }
 
 a{
   color: #fff;
+ 
 }
 
 .cor-dropdown{
@@ -69,8 +70,11 @@ a{
 
 li{
   margin-left: 10px;
-  font-weight: 300;
+  font-weight: 300;   
 }
+
+
+
 
 @media only screen and (max-width: 768px){
   .inverter-logo{

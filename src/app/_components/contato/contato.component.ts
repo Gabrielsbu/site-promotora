@@ -12,7 +12,7 @@ import * as AOS from 'aos';
   styleUrls: ['./contato.component.scss'],
   animations: [
     trigger('bounceInUp', [transition('* => *', useAnimation(bounceInUp, {
-      params: { timing: 10 }
+      params: { timing: 3 }
     }))])
   ],
 })
