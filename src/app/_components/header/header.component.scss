@@ -1,5 +1,5 @@
 .header-color{
-  background-color: #292b2c;
+  background-color: rgb(255, 106, 19);
 }
 
 
@@ -29,7 +29,7 @@ a{
   color: #fff;
   border-radius: 40px;
   cursor: pointer;
-  background: linear-gradient(to right, (rgb(255,221, 0), rgb(255, 106, 19)))
+  background:rgb(255,221, 0)
 
 }
 
@@ -70,4 +70,12 @@ a{
 li{
   margin-left: 10px;
   font-weight: 300;
+}
+
+@media only screen and (max-width: 768px){
+  .inverter-logo{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
 }
