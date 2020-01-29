@@ -18,6 +18,7 @@ import { BlogComponent } from './_components/blog/blog.component';
 import { FuncionalidadesComponent } from './_components/funcionalidades/funcionalidades.component';
 import { SubmenuComponent } from './_components/submenu/submenu.component';
 import { ContatosUtilitariosComponent } from './_utilities/contatos-utilitarios/contatos-utilitarios.component';
+import { MapeandoSvgBrasilComponent } from './_utilities/mapeando-svg-brasil/mapeando-svg-brasil.component';
 
 
 
@@ -36,6 +37,7 @@ import { ContatosUtilitariosComponent } from './_utilities/contatos-utilitarios/
     FuncionalidadesComponent,
     SubmenuComponent,
     ContatosUtilitariosComponent,
+    MapeandoSvgBrasilComponent,
 
   ],
   imports: [
