@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { bounceInRight } from 'ng-animate';
+import { bounceInUp } from 'ng-animate';
 import { trigger, transition, useAnimation } from '@angular/animations';
 import {NgbRatingConfig} from '@ng-bootstrap/ng-bootstrap';
 
@@ -11,14 +11,16 @@ import * as AOS from 'aos';
   providers: [NgbRatingConfig],
   styleUrls: ['./contato.component.scss'],
   animations: [
-    trigger('bounceInRight', [transition('* => *', useAnimation(bounceInRight, {
+    trigger('bounceInUp', [transition('* => *', useAnimation(bounceInUp, {
       params: { timing: 10 }
     }))])
   ],
 })
 export class ContatoComponent implements OnInit {
-  currentRate = 3;
-  bounceInRight: any;
+
+  qtdEstrelas = 3;
+  bounceInUp: any;
+
   constructor(config: NgbRatingConfig) {
     config.max = 5;
     config.resettable = true;

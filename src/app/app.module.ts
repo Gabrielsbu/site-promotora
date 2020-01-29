@@ -18,6 +18,7 @@ import { BlogComponent } from './_components/blog/blog.component';
 import { FuncionalidadesComponent } from './_components/funcionalidades/funcionalidades.component';
 import { SiderbarComponent } from './_components/siderbar/siderbar.component';
 import { SubmenuComponent } from './_components/submenu/submenu.component';
+import { IndexComponent } from './_components/index/index.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { SubmenuComponent } from './_components/submenu/submenu.component';
     FuncionalidadesComponent,
     SiderbarComponent,
     SubmenuComponent,
+    IndexComponent,
 
 
   ],

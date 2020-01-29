@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-seja-parceiro',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./seja-parceiro.component.scss']
 })
 export class SejaParceiroComponent implements OnInit {
-
-  constructor() { }
+  closeResult: string;
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit() {
   }
 
+  openXl(content) {
+    this.modalService.open(content, { size: 'xl' });
+  }
 }

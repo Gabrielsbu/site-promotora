@@ -1,48 +1,42 @@
 <header class="header-color">
 
-    <nav class="navbar navbar-expand-md " >
-      <a class="navbar-brand" routerLink="/home"><img src="../../../assets/logo-paginas-do-site.png" alt="Logo"></a>
+      <nav  class="navbar navbar-expand-md">
+        <a class="navbar-brand" routerLink="/home"><img src="../../../assets/logo-paginas-do-site.png" alt="Logo"></a>
 
-      <button type="button" class="navbar-toggler button-expanded" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
-        <i class="fas fa-bars"></i>
-      </button>
+        <button type="button" class="navbar-toggler button-expanded" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+          <i class="fas fa-bars"></i>
+        </button>
 
-      <div class="collapse navbar-collapse" id="collapseExample" [ngbCollapse] = "isCollapsed">
-        <ul class="navbar-nav ml-auto">
-          <li routerLinkActive="active" class="navbar-item">
-            <a class="nav-link" routerLink="/conheca-f5">CONHEÇA A F5</a>
-          </li>
+        <div class="collapse navbar-collapse" id="collapseExample" [ngbCollapse] = "isCollapsed">
+          <ul class="navbar-nav ml-auto">
+            <li routerLinkActive="active" class="navbar-item">
+              <a class="nav-link" routerLink="/conheca-f5">CONHEÇA A F5</a>
+            </li>
 
-          <li class="navbar-item">
-            <a class="nav-link" routerLink="/para-voce">PARA VOCÊ</a>
-          </li>
+            <li class="navbar-item">
+              <a class="nav-link" routerLink="/para-voce">PARA VOCÊ</a>
+            </li>
 
-          <li class="navbar-item">
-            <a routerLink="/produtos"class="nav-link">PRODUTOS</a>
-          </li>
+            <li class="navbar-item">
+              <a class="nav-link" routerLink="/blog">BLOG</a>
+            </li>
 
-          <li class="navbar-item">
-            <a class="nav-link" routerLink="/blog">BLOG</a>
-          </li>
+            <li class="navbar-item">
+              <a class="nav-link" (click)="isCollapsed = !isCollapsed" routerLink="/contato">CONTATO</a>
+            </li>
 
-          <li class="navbar-item">
-            <a class="nav-link" (click)="isCollapsed = !isCollapsed" routerLink="/contato">CONTATO</a>
-          </li>
+            <li class="navbar-item">
+              <div><a class="nav-link" (click)="isCollapsed = !isCollapsed" routerLink="/seja-parceiro">SEJA PARCEIRO</a></div>
+            </li>
 
-          <li class="navbar-item">
-            <div><a class="nav-link" routerLink="/seja-parceiro">SEJA PARCEIRO</a></div>
-          </li>
+            <li>
+              <app-funcionalidades></app-funcionalidades>
+            </li>
+            
+          </ul>
 
-          <li>
-            <app-funcionalidades></app-funcionalidades>
-          
-          </li>
-          
-        </ul>
+        </div>
 
-      </div>
-
-    </nav>
-
+      </nav>
 </header>
 

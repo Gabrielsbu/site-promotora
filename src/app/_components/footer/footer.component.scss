@@ -1,7 +1,10 @@
-footer{
-  background: rgb(255,106,19);
+.footer-color{
+  background: #E9EBEE;
 }
 
+.p-color{
+  background: rgb(255, 106, 19)
+}
 a{
   color: #212529;
 }
@@ -16,6 +19,13 @@ li{
 }
 
 h5{
-  color: white;
+  color: rgb(255, 106, 19);
   text-align: center;
 }
+
+p{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+}
+

@@ -1,6 +1,13 @@
 <div class="container">
   <ng-template #content let-modal>
 
+    <div class="modal-header img-back">
+      <h4 class="modal-title cor-titulo">Funcionalidades</h4>
+      <button type="button" class="close cor-titulo" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
     <div class="modal-body">
       <app-submenu></app-submenu>
     </div>

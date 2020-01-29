@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { trigger, transition, useAnimation } from '@angular/animations';
 import { bounceInDown } from 'ng-animate';

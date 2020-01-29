@@ -1,6 +1,8 @@
 .header-color{
-  background-color: rgb(0, 6, 54);
+  background-color: #292b2c;
 }
+
+
 .btn:focus {
   outline: none !important;
 }
@@ -37,8 +39,6 @@ a{
   height: 40px;
   border-radius: 50px;
 
- 
-
 }
 
 .button-funcionalidades{
@@ -70,10 +70,4 @@ a{
 li{
   margin-left: 10px;
   font-weight: 300;
-}
-
-@media only screen and (max-width: 600px){
-  header{
-    background: black;
-  }
 }
