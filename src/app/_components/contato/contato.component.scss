@@ -12,11 +12,17 @@
   min-height: 100%;
 }
 
+.lado-lado{
+  display: flex;
+  flex-direction: row ;
+  
+  
+}
 
 img{
   margin-top: 150px;
-  height: 50vh;
-  width: 40vh;
+  height: 30vh;
+  width: 20vh;
 }
 .largura-card{
   width: 100%;
@@ -122,7 +128,12 @@ ngb-rating:focus{
 
   .background-resp{
     background: rgb(255, 106, 19);
-    min-height: 60vh;
+    min-height: 40vh;
+  }
+
+  .lado-lado{
+    display: flex;
+    flex-direction: column;
   }
 }
 
