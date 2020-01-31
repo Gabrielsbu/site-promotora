@@ -1,3 +1,33 @@
 .back{
-    color: rgb(0, 156, 161);
+    background: url(../../../assets/barrens-site.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+div.card{
+    border-radius: 15px;
+    margin-top: 10px;
+    height: 100%;
+    
+   
+}
+
+div.card img{
+    
+    margin-top: 25px;
+}
+.alinhamento-central{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px){
+    div.card{
+        border-radius: 15px;
+        margin-top: 10px;
+        height: 100%
+        
+       
+    }
 }

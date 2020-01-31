@@ -1,23 +1,40 @@
-import { BlogComponent } from './_components/blog/blog.component';
-import { HomeComponent } from './_components/home/home.component';
-import { ContatoComponent } from './_components/contato/contato.component';
-import { SejaParceiroComponent } from './_components/seja-parceiro/seja-parceiro.component';
-import { ProdutosComponent } from './_components/produtos/produtos.component';
-import { ParaVoceComponent } from './_components/para-voce/para-voce.component';
-import { PrimeiroCompComponent } from './_components/cp-conhecaf5/primeiro-comp.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
-  {path: 'conheca-f5', component: PrimeiroCompComponent},
-  {path: 'para-voce', component: ParaVoceComponent},
-  {path: 'produtos', component: ProdutosComponent},
-  {path: 'seja-parceiro', component: SejaParceiroComponent},
-  {path: 'contato', component: ContatoComponent},
-  {path: 'blog', component: BlogComponent},
-  {path: '', component: HomeComponent},
+
+  {
+    path: '', loadChildren: () => import('./_components/home/home.module').then(m => m.HomeModule)
+  },
+
+  {
+    path: 'home', loadChildren: () => import('./_components/home/home.module').then(m => m.HomeModule)
+  },
+
+  {
+    path: 'contato', loadChildren: () => import('./_components/contato/contato.module').then(m => m.ContatoModule)
+  },
+
+  {
+    path: 'blog', loadChildren: () => import('./_components/blog/blog.module').then(m => m.BlogModule)
+  },
+
+  {
+    path: 'conheca-f5', loadChildren: () => import('./_components/conheca-f5/conheca-f5.module').then(m => m.ConhecaF5Module)
+  },
+
+  {
+    path: 'para-voce', loadChildren: () => import('./_components/para-voce/para-voce.module').then(m => m.ParaVoceModule)
+  },
+
+  {
+    path: 'produtos', loadChildren: () => import('./_components/produtos/produtos.module').then(m => m.ProdutosModule)
+  },
+
+  {
+    path: 'parceiro', loadChildren: () => import('./_components/seja-parceiro/seja-parceiro.module').then(m => m.SejaParceiroModule)
+  },
 ];
 
 @NgModule({
