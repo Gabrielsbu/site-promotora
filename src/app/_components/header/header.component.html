@@ -1,16 +1,16 @@
 <header class="header-color">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg">
+    
+      <nav class="navbar navbar-expand-lg d-flex align-items-center">
 
         <button type="button" class="navbar-toggler button-expanded mr-auto" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
           <i class="fas fa-bars"></i>
         </button>
         
-        <a class="navbar-brand ml-auto" routerLink="/home"><img class="img-fluid" src="../../../assets/logo-inicio-do-site.png" alt="Logo"></a>
+        <a class="navbar-brand ml-auto d-flex align-items-center" routerLink="/home"><img class="img-fluid" src="../../../assets/logo-inicio-do-site.png" alt="Logo"></a>
 
         <div class="collapse navbar-collapse" id="collapseExample" [ngbCollapse] = "isCollapsed">
-          <ul class="navbar-nav ml-auto">
-            <li routerLinkActive="active" class="navbar-item">
+          <ul class="navbar-nav ml-auto ">
+            <li routerLinkActive="active" class="navbar-item " >
               <a class="nav-link" routerLink="/conheca-f5">F5 PROMOTORA</a>
             </li>
 
@@ -31,14 +31,23 @@
             </li>
 
             <li>
-              <app-funcionalidades></app-funcionalidades>
+              <div class="row">
+                <div class="col">
+                  <div ngbDropdown class="d-inline-block">
+                    <a class="btn" id="drop-func" ngbDropdownToggle>PARA VOCÊ</a>
+                    <div ngbDropdownMenu aria-labelledby="drop-func">
+                      <button ngbDropdownItem>Action - 1</button>
+                      <button ngbDropdownItem>Another Action</button>
+                      <button ngbDropdownItem>Something else is here</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
-            
-          </ul>
-
-        </div>
+            </ul>
+          </div>
 
       </nav>
-    </div>
+   
 </header>
 
