@@ -10,9 +10,6 @@ import { HeaderComponent } from './_components/header/header.component';
 import { FooterComponent } from './_components/footer/footer.component';
 import { FuncionalidadesComponent } from './_components/funcionalidades/funcionalidades.component';
 import { SubmenuComponent } from './_components/submenu/submenu.component';
-import { MapeandoSvgBrasilComponent } from './_utilities/mapeando-svg-brasil/mapeando-svg-brasil.component';
-
-
 
 
 @NgModule({
@@ -22,7 +19,6 @@ import { MapeandoSvgBrasilComponent } from './_utilities/mapeando-svg-brasil/map
     FooterComponent,
     FuncionalidadesComponent,
     SubmenuComponent,
-    MapeandoSvgBrasilComponent,
 
   ],
   imports: [

@@ -8,7 +8,6 @@ import * as AOS from 'aos';
   selector: 'app-contatos-utilitarios',
   templateUrl: './contatos-utilitarios.component.html',
   styleUrls: ['./contatos-utilitarios.component.scss'],
-  
 })
 export class ContatosUtilitariosComponent implements OnInit {
 

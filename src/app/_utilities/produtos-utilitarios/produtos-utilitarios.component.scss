@@ -1,0 +1,28 @@
+.back{
+    background-color: rgb(102, 15, 8);
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    color: white;
+    border-radius: 3px;
+    margin: 10px 0 ;
+    flex-direction: row-reverse;
+}
+
+
+h3{
+    font-weight: 800;
+}
+
+a:link
+{
+text-decoration:none;
+}
+
+@media only screen and (min-width: 992px){
+    .back{
+        min-height: 20vh;
+       
+    }
+}

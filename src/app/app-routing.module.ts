@@ -35,6 +35,10 @@ const routes: Routes = [
   {
     path: 'parceiro', loadChildren: () => import('./_components/seja-parceiro/seja-parceiro.module').then(m => m.SejaParceiroModule)
   },
+
+  {
+    path: 'downloads', loadChildren: () => import('./_components/downloads/downloads.module').then(m => m.DownloadsModule)
+  }
 ];
 
 @NgModule({
