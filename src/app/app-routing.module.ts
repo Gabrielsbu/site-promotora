@@ -38,6 +38,14 @@ const routes: Routes = [
 
   {
     path: 'downloads', loadChildren: () => import('./_components/downloads/downloads.module').then(m => m.DownloadsModule)
+  },
+
+  {
+    path: 'formalizacao', loadChildren: () => import('./_components/formalizacao/formalizacao.module').then(m => m.FormalizacaoModule)
+  },
+  {
+    path: 'canais-corporativos', loadChildren: () =>
+    import('./_components/canais-corporativos/canais-corporativos.module').then(m => m.CanaisCorporativosModule)
   }
 ];
 

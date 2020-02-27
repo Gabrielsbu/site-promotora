@@ -12,6 +12,21 @@ a{
   font-size: 16px;
 }
 
+.button-funcionalidades-cons{
+  border:none;
+  border-radius: 10px;
+  width: 100%;
+  height: 8%;
+  background: #fff;
+  color: rgb(255,106,19);
+
+}
+.button-funcionalidades-cons:hover{
+  background: rgba(255,106,19, 0.6);
+  color: #000;
+
+}
+
 .button-funcionalidades{
     border:none;
     border-radius: 10px;
@@ -48,8 +63,12 @@ a{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    
-    
+  
+  
+  }
+
+  .ajustar-redes i {
+   color: rgb(255,106,19);
   }
 
   p{

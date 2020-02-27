@@ -1,6 +1,6 @@
 .back-1{
-  background: #fff;
-  min-height: 25vh;
+  background: rgb(141, 192, 255);
+ 
 }
 
 .back-2{
@@ -9,15 +9,16 @@
 }
 
 
-
 div.text-center h6{
   
   font-size: 12px;
 }
 
-ul li a{
-  text-decoration: none;
+a{
+  text-decoration: none ;
   color: black;
-  font-size: 15px;
 }
 
+a.m-2 i {
+  color: rgb(255, 106, 19);
+}
