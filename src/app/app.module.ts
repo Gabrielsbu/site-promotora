@@ -11,6 +11,7 @@ import { HeaderComponent } from './_components/header/header.component';
 import { FooterComponent } from './_components/footer/footer.component';
 import { FuncionalidadesComponent } from './_components/funcionalidades/funcionalidades.component';
 import { SubmenuComponent } from './_components/submenu/submenu.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { SubmenuComponent } from './_components/submenu/submenu.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule,
     FontAwesomeModule,
     NgbModule,
     BrowserAnimationsModule,

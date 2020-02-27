@@ -29,4 +29,8 @@ export class HeaderComponent implements OnInit {
     this.modalService.open(content, { size: 'xl' });
   }
 
+  modalHasClosed(event) {
+    this.isCollapsed = !this.isCollapsed;
+  }
+
 }

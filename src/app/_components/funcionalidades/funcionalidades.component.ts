@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 
@@ -12,6 +12,8 @@ export class FuncionalidadesComponent implements OnInit {
   closeResult: string;
   bounceInLeft: any;
   numero: number;
+
+  @Output() modalClosed: EventEmitter<any> = new EventEmitter();
   constructor(private modalService: NgbModal) {}
 
   ngOnInit() {
@@ -19,6 +21,10 @@ export class FuncionalidadesComponent implements OnInit {
 
   openXl(content) {
     this.modalService.open(content, { size: 'xl' });
+  }
+
+  testModalClosed(event) {
+    this.modalClosed.emit('teste2');
   }
 
 }

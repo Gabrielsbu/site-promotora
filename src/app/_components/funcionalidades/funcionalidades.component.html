@@ -8,7 +8,7 @@
      </div>
         
      <div class="modal-body modal-color">
-         <app-submenu></app-submenu>
+         <app-submenu [modal]="modal" (modalClosed)="testModalClosed($event)"></app-submenu>
      </div>
 
 </ng-template>
