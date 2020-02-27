@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -28,6 +29,9 @@ import { SubmenuComponent } from './_components/submenu/submenu.component';
     NgbModule,
     BrowserAnimationsModule,
 
+  ],
+  exports: [
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

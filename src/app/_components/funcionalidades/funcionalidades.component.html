@@ -1,9 +1,8 @@
 <ng-template #content let-modal>
 
     <div class="ajuste-close">
-        <a routerLinkActive routerLink="/home"><img src="../../../assets/logo-paginas-do-site.png"></a>
-         <h4 class="mt-5" >MAIS SERVIÇOS </h4>
-         <button type="button" class="close" (click)="modal.dismiss('Cross click')">
+        <a routerLinkActive routerLink="/home" class="ml-3"><img src="../../../assets/logo-inicio-do-site.png"></a>
+         <button type="button" class="close btn mr-3" (click)="modal.dismiss('Cross click')">
              <span aria-hidden="true">&times;</span>
          </button>
      </div>
@@ -14,7 +13,7 @@
 
 </ng-template>
   
-<button class="btn button-funcionalidades mb-2 mr-2" (click)="openXl(content)">Funcionalidades</button>
+<button class="btn button-funcionalidades mb-2 mr-2" (click)="openXl(content)">PARA VOCÊ</button>
   
 
   

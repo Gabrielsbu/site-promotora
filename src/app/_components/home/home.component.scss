@@ -9,12 +9,16 @@ div.card{
     margin-top: 10px;
     height: 100%;
     
-   
+}
+
+.porque-f5{
+    color: rgb(255, 106, 19);
+
 }
 
 div.card img{
-    
     margin-top: 25px;
+   
 }
 .alinhamento-central{
     display:flex;
@@ -22,17 +26,6 @@ div.card img{
     align-items: center;
 }
 
-.button-produtos{
-    width: 250px;
-    height: 40px;
-    background: rgb(255, 221, 0);
-    border-radius: 20px;
-    color: #fff;
-}
-
-.ajustar-div-mapa{
-    min-height: 100%;
-}
 
 @media only screen and (max-width: 768px){
     div.card{
@@ -40,6 +33,10 @@ div.card img{
         margin-top: 10px;
         height: 100%
           
+    }
+
+    div.card-body{
+        height: 70%;
     }
 
     .button-produtos{

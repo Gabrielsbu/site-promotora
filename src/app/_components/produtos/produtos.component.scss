@@ -13,6 +13,12 @@ div.card{
    
 }
 
+p.card-body{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
 div.card img{
     height: 40%;
     width: 40%;

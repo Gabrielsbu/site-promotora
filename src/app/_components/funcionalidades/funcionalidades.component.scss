@@ -11,7 +11,7 @@
     width: 180px;
     height: 40px;
     border-radius: 50px;
-    background:  rgb(255,221, 0);
+    background: linear-gradient(to right, rgb(255,106,19), rgb(255,221, 0));
     color: #fff;
   
   }
@@ -34,10 +34,12 @@
   .ajuste-close{
       display: flex;
       justify-content: space-between;
-      margin: 0 20px;
+      background: rgb(43, 86, 167);
   }
   
 .modal-color{
-  background-color: #fff;
+  background-color: rgb(140, 187, 206);
 }
+
+
   

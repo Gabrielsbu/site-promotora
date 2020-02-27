@@ -1,5 +1,5 @@
 .header-color{
-  background-color: rgb(255, 106, 19);
+  background-color: rgb(43, 86, 167);
   height: 100%;
 }
 
@@ -11,7 +11,7 @@
 
 a:hover{
   color: rgb(0, 0, 0);
-  background: rgba(255, 106, 0, 0.8);
+
 }
 
 a{
@@ -31,7 +31,7 @@ a{
   color: #fff;
   border-radius: 40px;
   cursor: pointer;
-  background:rgb(255,221, 0)
+  background:linear-gradient(to right, rgb(255,106,19), rgb(255,221, 0));
 
 }
 
