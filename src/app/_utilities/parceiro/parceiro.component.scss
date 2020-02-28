@@ -8,7 +8,8 @@ div.border{
 
 div.border:hover{
   cursor: pointer;
-  
+  border-style: solid;
+  border-color: #F00 !important;
 }
 
 a{

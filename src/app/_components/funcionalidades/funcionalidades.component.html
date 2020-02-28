@@ -1,7 +1,7 @@
 <ng-template #content let-modal>
 
     <div class="ajuste-close">
-        <a routerLinkActive routerLink="/home" class="ml-3"><img src="../../../assets/logo-inicio-do-site.png"></a>
+        <a routerLinkActive routerLink="/home" (click)="modal.dismiss('Cross click')" class="ml-3"><img src="../../../assets/logo-inicio-do-site.png"></a>
          <button type="button" class="close btn mr-3" (click)="modal.dismiss('Cross click')">
              <span aria-hidden="true">&times;</span>
          </button>

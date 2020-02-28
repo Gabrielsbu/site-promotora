@@ -1,0 +1,47 @@
+.back{
+    background: rgb(43, 86, 167);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    color: #fff;
+    border-radius: 3px;
+   
+}
+
+.back-1{
+    background: rgb(43, 86, 167);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    height: 35vh;
+    color: #fff;
+    border-radius: 3px;
+   
+}
+
+
+
+h3{
+    font-weight: 800;
+}
+
+a:link
+{
+text-decoration:none;
+}
+
+@media only screen and (max-width: 992px){
+    .back{
+        background: rgb(43, 86, 167);
+        display: flex;
+        align-items: center;
+        height: 70vh;
+        color: white;
+        border-radius: 3px;
+        min-height: 100px;
+        text-align: center;
+    }
+}
