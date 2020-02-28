@@ -7,7 +7,7 @@ import { HomeComponent } from './home.component';
 import { ContatosUtilitariosModule } from 'src/app/_utilities/contatos-utilitarios/contatos-utilitarios.module';
 import { MapeandoSvgBrasilModule } from './../../_utilities/mapeando-svg-brasil/mapeando-svg-brasil.module';
 import { ProdutosUtilitariosModule } from './../../_utilities/produtos-utilitarios/produtos-utilitarios.module';
-
+import { ParceiroModule } from '../../_utilities/parceiro/parceiro.module';
 
 @NgModule({
   declarations: [HomeComponent],
@@ -17,7 +17,8 @@ import { ProdutosUtilitariosModule } from './../../_utilities/produtos-utilitari
     ContatosUtilitariosModule,
     MapeandoSvgBrasilModule,
     NgbModule,
-    ProdutosUtilitariosModule
+    ProdutosUtilitariosModule,
+    ParceiroModule
   ]
 })
 export class HomeModule { }

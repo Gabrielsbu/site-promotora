@@ -10,10 +10,21 @@
     
 }
 
+.config-header{
+    z-index: 0;
+}
+
+.teste{
+    margin-top: -100px;
+}
+
+.teste1{
+    margin-top: -100px;
+}
 
 div.card{
     border-radius: 15px;
-    margin-top: 10px;
+    margin-top: 10px 0;
     height: 100%;   
 }
 
@@ -32,8 +43,22 @@ div.card img{
     align-items: center;
 }
 
+// @media only screen and (width: 1024px){
+//     .back{
+//         background: url("../../../assets/barrens-site.png");
+//         background-repeat: no-repeat;
+//         background-size: 100%;
+//         display: flex;
+//         align-items: center;
+//         height: 50vh;
+//         color: black;
+//         border-radius: 3px;
+        
+//     }
+// }
 
-@media only screen and (max-width: 992px){
+
+@media only screen and (max-width: 1024px){
     div.card{
         border-radius: 15px;
         margin-top: 10px;
@@ -56,9 +81,20 @@ div.card img{
         background: rgb(255, 106, 19);
         display: flex;
         align-items: center;
-        height: 70vh;
+        height: 50vh;
         color: white;
         border-radius: 3px;
         min-height: 100px;
     }
+   
+    
+    .teste{
+        margin-top: 10px;
+    }
+
+
+    .teste1{
+       margin-top: 10px
+    }
+
 }
