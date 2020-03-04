@@ -19,6 +19,15 @@ a{
  
 }
 
+div.a-color{
+  a{
+    color: rgb(255,106,19)
+  }
+  a:hover{
+    color: #000
+  }
+}
+
 .cor-dropdown{
   background: transparent;
 }
@@ -48,8 +57,18 @@ a{
   width: 180px;
   height: 40px;
   border-radius: 50px;
-  background: linear-gradient(to right, rgb(255,106,19), rgb(255,221, 0));
+  background: rgb(255,221, 0);
   color: #fff;
+
+}
+
+.button-funcionalidades:hover{
+  border:none;
+  width: 180px;
+  height: 40px;
+  border-radius: 50px;
+  background: rgb(255,221, 0);
+  color: #000;
 
 }
 
@@ -86,6 +105,24 @@ li{
   .header-color{
     background-color:  rgb(255,106,19);
     
+  }
+  
+  .background-drop{
+    background: transparent;
+    border:none
+
+  }
+
+  .background-drop a{
+    color: #fff
+
+  }
+
+
+  div.a-color{
+    a{
+      color: #fff
+    }
   }
   
 

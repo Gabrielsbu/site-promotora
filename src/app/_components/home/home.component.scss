@@ -10,13 +10,51 @@
     
 }
 
-.back-cards{
-    background: rgb(124, 6, 6);
+.icons{
+    border: 1px solid #BBB;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    padding: 4px;
+}
+
+.icon{
+    background: #BBB;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 22px 24px;
+}
+
+.icon:hover{
+    background: rgb(255, 106, 19);
+   
+}
+
+.back-passo{
+    height: 80vh;
+}
+
+.back-servicos{
+    background-color: rgb(255, 106, 19);
     height: 100vh;
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
+}
+.btn-parceiro{
     
+    background: rgb(255,221, 0);
+    height: 100%;
+    width: 40%;
+}
+
+.btn-parceiro:hover{
+    
+    background: rgb(255, 106, 19);
+    
+}
+
+.back-entre-contato{
+    height: 90vh;
 }
 
 .config-header{
@@ -27,22 +65,12 @@
     margin-top: -100px;
 }
 
-
-div.card{
-    border-radius: 15px;
-    margin-top: 10px 0;
-    height: 70vh;   
-}
-
 .porque-f5{
     color: rgb(255, 106, 19);
 
 }
 
-div.card img{
-    margin-top: 25px;
-   
-}
+
 .alinhamento-central{
     display:flex;
     justify-content: center;
@@ -51,17 +79,6 @@ div.card img{
 
 
 @media only screen and (max-width: 1024px){
-    div.card{
-        border-radius: 15px;
-        margin-top: 10px;
-        height: 70vh
-          
-    }
-
-    div.card-body{
-        height: 70%;
-    }
-
     .button-produtos{
         width: 100%;
         height: 40px;
@@ -84,15 +101,16 @@ div.card img{
         margin-top: 10px;
     }
 
-
     .teste1{
        margin-top: 10px
     }
 
-    .back-cards{
-        background: rgb(124, 6, 6);
+    .back-passo{
         height: 100%;
-  
+    }
+
+    .back-servicos{
+        height: 100%;
     }
 
 

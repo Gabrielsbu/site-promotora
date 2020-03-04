@@ -10,6 +10,25 @@
 
         <div class="collapse navbar-collapse" id="collapseExample" [ngbCollapse] = "isCollapsed">
           <ul class="navbar-nav ml-auto ">
+
+         
+            <li class="navbar-item">
+              <div ngbDropdown class="d-inline-block" >
+                <button class="btn button-funcionalidades" id="dropdownBasic1" ngbDropdownToggle >Para você</button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="a-color background-drop">
+                  <a ngbDropdownItem  href="http://187.19.199.158:8080/ConsignaWeb/Account/Login.aspx" target="_blank"> <i class="text fas fa-chart-line"></i> ÁREA CONSIGNA</a>
+                  <a ngbDropdownItem  href="https://docs.google.com/forms/d/e/1FAIpQLSdSycXPd5T2EdepChPUM1Y35LcCZpVNff_lyZS9e4vkpaqVAw/closedform" target="_blank"> <i class="fas fa-file"></i> FORMULÁRIOS</a>
+                  <a ngbDropdownItem routerLink="/formalizacao" (click)="teste($event)"> <i class="fas fa-check-square"></i> FORMALIZAÇÃO</a>
+                  <a ngbDropdownItem routerLink="/downloads" (click)="teste($event)" > <i class="far fa-file-pdf"></i> DOWNLOADS</a>
+                  <a ngbDropdownItem href="http://f5promotora.com.br/f5-simulador/" target="_blank"> <i class="fas fa-user"></i> SIMULADOR</a>
+                  <a ngbDropdownItem href="http://f5promotora.com.br/links" target="_blank"> <i class="fas fa-link"></i> LINKS</a>
+                  <a ngbDropdownItem routerLink="/canais-corporativos" (click)="teste($event)"> <i class="fas fa-users"></i> CANAIS CORPORATIVOS</a>
+                
+                
+                </div>
+              </div>
+            </li> 
+
             <li routerLinkActive="active" class="navbar-item " >
               <a class="nav-link" (click)="isCollapsed = !isCollapsed" routerLink="/conheca-f5">F5 PROMOTORA</a>
             </li>
@@ -30,9 +49,11 @@
               <div><a class="nav-link" (click)="isCollapsed = !isCollapsed" routerLink="/parceiro">SEJA PARCEIRO</a></div>
             </li>
 
+         
+<!-- 
             <li>
               <app-funcionalidades (modalClosed)="modalHasClosed($event)"></app-funcionalidades>
-            </li>
+            </li> -->
             </ul>
           </div>
 
