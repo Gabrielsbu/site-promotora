@@ -1,6 +1,34 @@
 .header-color{
-  background-color: rgb(43, 86, 167);
+  background-color: rgb(255,106,19);
   
+}
+
+
+li{
+  padding: 0 25px;
+}
+
+section{
+  height: 1.8rem;
+}
+
+section span {
+  color: rgb(43, 86, 167);
+  text-decoration: none;
+  font-size: 0.6rem;
+  font-family: "Ubuntu";
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0 5px;
+  
+
+}
+
+section i {
+  color: rgb(43, 86, 167);
+  text-decoration: none;
+  font-size: 0.6rem;
 }
 
 div.d-inline-block a{
@@ -11,16 +39,44 @@ div.d-inline-block a{
   outline: none !important;
 }
 
+a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.7rem;
+  font-family: "Ubuntu";
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0 5px;
+  
+}
+
+.estilizacao{
+  a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: "Ubuntu";
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0 5px;
+
+  }
+
+  a:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+}
+
+
 
 a:hover{
   color: rgb(0, 0, 0);
 
 }
 
-a{
-  color: #fff;
- 
-}
 
 div.a-color{
   a{
@@ -56,33 +112,9 @@ div.a-color{
 }
 
 .background-drop{
-  background: rgba(1, 1, 1, 0.3);
+  background: rgba(1, 1, 1, 0.4);
   border:none
 
-}
-
-.button-funcionalidades{
-  border:none;
-  width: 180px;
-  height: 40px;
-  border-radius: 50px;
-  background: rgb(255,221, 0);
-  color: #fff;
-
-}
-
-.button-funcionalidades:hover{
-  border:none;
-  width: 180px;
-  height: 40px;
-  border-radius: 50px;
-  background: rgb(255,221, 0);
-  color: #000;
-
-}
-
-.button-funcionalidades:focus{
- box-shadow: none;
 }
 
 li{
@@ -116,6 +148,11 @@ li{
     a{
       color: #fff
     }
+  }
+
+  a.dropdown-item{
+    text-align: center;
+    margin-bottom: 10px;
   }
   
 

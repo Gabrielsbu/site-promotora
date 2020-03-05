@@ -1,21 +1,24 @@
+<section class="d-flex align-items-center container">
+  <a href="parceiro"> <i class="fas fa-arrow-right" data-aos="fade-right"></i><span>SEJA NOSSO PARCEIRO</span></a>
+  <a class="ml-3" href="contato"> <i class="fas fa-arrow-right" data-aos="fade-right"></i><span>TRABALHE CONOSCO</span></a>
+</section>
+
 <header class="header-color">
     
-      <nav class="navbar navbar-expand-lg d-flex align-items-center w-100">
+      <nav class="navbar navbar-expand-lg d-flex align-items-center w-100 p-0 m-0">
 
         <button type="button" class="navbar-toggler button-expanded mr-auto" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
           <i class="fas fa-bars"></i>
         </button>
         
-        <a class="navbar-brand ml-auto d-flex align-items-center" routerLink="/home"><img class="img-fluid" src="../../../assets/logo-inicio-do-site.png" alt="Logo"></a>
+        <a class="navbar-brand d-block d-lg-none" routerLink="/home"><img class="img-fluid" src="../../../assets/logo-inicio-do-site.png" alt="Logo"></a>
 
-        <div class="collapse navbar-collapse" id="collapseExample" [ngbCollapse] = "isCollapsed">
-          <ul class="navbar-nav ml-auto ">
+        <div class="collapse navbar-collapse p-0 m-0" id="collapseExample" [ngbCollapse] = "isCollapsed">
+          <ul class="navbar-nav d-flex align-items-center mx-auto mb-3">
 
-         
-            <li class="navbar-item">
-              <div ngbDropdown class="d-inline-block" >
-                
-                <a class="btn" id="dropdownBasic1" ngbDropdownToggle >PARA VOCÊ</a>
+            <li class="navbar-item d-block d-lg-none d-xl-none">
+              <div ngbDropdown class="d-inline-block">       
+                <a class="btn" id="dropdownBasic1" ngbDropdownToggle><span>PARA VOCÊ</span></a>
                 <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="a-color background-drop">
                   <a ngbDropdownItem href="http://187.19.199.158:8080/ConsignaWeb/Account/Login.aspx" target="_blank"> <i class="text fas fa-chart-line"></i> ÁREA CONSIGNA</a>
                   <a ngbDropdownItem href="https://docs.google.com/forms/d/e/1FAIpQLSdSycXPd5T2EdepChPUM1Y35LcCZpVNff_lyZS9e4vkpaqVAw/closedform" target="_blank"> <i class="fas fa-file"></i> FORMULÁRIOS</a>
@@ -28,25 +31,47 @@
                 </div>
               </div>
             </li> 
-
+           
             <li routerLinkActive="active" class="navbar-item">
-              <a class="nav-link" (click)="isCollapsed = !isCollapsed" routerLink="/conheca-f5">F5 PROMOTORA</a>
+              <a class="nav-link" (click)="isCollapsed = !isCollapsed" routerLink="/conheca-f5"><span>F5 PROMOTORA</span></a>
             </li>
 
             <li class="navbar-item">
-              <a class="nav-link" (click)="isCollapsed = !isCollapsed" routerLink="/produtos">PRODUTOS</a>
+              <a class="nav-link" (click)="isCollapsed = !isCollapsed" routerLink="/produtos"><span>PRODUTOS</span></a>
+            </li>
+       
+            <li class="navbar-item">
+              <a class="nav-link"(click)="isCollapsed = !isCollapsed" routerLink="/blog"><span>BLOG</span></a>
             </li>
 
             <li class="navbar-item">
-              <a class="nav-link"(click)="isCollapsed = !isCollapsed" routerLink="/blog">BLOG</a>
+              <a class="navbar-brand d-none d-lg-block" routerLink="/home"><img class="img-fluid" src="../../../assets/logo-inicio-do-site.png" alt="Logo"></a>
+
+            </li>
+
+            <li class="navbar-item d-none d-lg-block d-xl-block">
+              <div ngbDropdown class="d-inline-block">       
+                <a class="btn estilizacao" id="dropdownBasic1" ngbDropdownToggle><span>PARA VOCÊ</span></a>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="a-color background-drop">
+                  <a ngbDropdownItem href="http://187.19.199.158:8080/ConsignaWeb/Account/Login.aspx" target="_blank"> <i class="text fas fa-chart-line"></i> ÁREA CONSIGNA</a>
+                  <a ngbDropdownItem href="https://docs.google.com/forms/d/e/1FAIpQLSdSycXPd5T2EdepChPUM1Y35LcCZpVNff_lyZS9e4vkpaqVAw/closedform" target="_blank"> <i class="fas fa-file"></i> FORMULÁRIOS</a>
+                  <a ngbDropdownItem routerLink="/formalizacao"> <i class="fas fa-check-square"></i> FORMALIZAÇÃO</a>
+                  <a ngbDropdownItem routerLink="/downloads"> <i class="far fa-file-pdf"></i> DOWNLOADS</a>
+                  <a ngbDropdownItem href="http://f5promotora.com.br/f5-simulador/" target="_blank"> <i class="fas fa-user"></i> SIMULADOR</a>
+                  <a ngbDropdownItem href="http://f5promotora.com.br/links" target="_blank"> <i class="fas fa-link"></i> LINKS</a>
+                  <a ngbDropdownItem routerLink="/canais-corporativos"> <i class="fas fa-users"></i> CANAIS CORPORATIVOS</a>
+                
+                </div>
+              </div>
+            </li> 
+           
+
+            <li class="navbar-item">
+              <a class="nav-link" (click)="isCollapsed = !isCollapsed" routerLink="/contato"><span>CONTATO</span></a>
             </li>
 
             <li class="navbar-item">
-              <a class="nav-link" (click)="isCollapsed = !isCollapsed" routerLink="/contato">CONTATO</a>
-            </li>
-
-            <li class="navbar-item">
-              <div><a class="nav-link" (click)="isCollapsed = !isCollapsed" routerLink="/parceiro">SEJA PARCEIRO</a></div>
+              <div><a class="nav-link" (click)="isCollapsed = !isCollapsed" routerLink="/parceiro"><span>SEJA PARCEIRO</span></a></div>
             </li>
 
             </ul>
