@@ -1,48 +1,16 @@
-#svg-map path {
-    fill: #0094d9
-  }
-  
-  #svg-map text {
-    fill: #fff;
-    font: 12px Arial-BoldMT, sans-serif;
-    cursor: pointer
-  }
-  
-  #svg-map a {
-    text-decoration: none
-  }
-  
-  #svg-map a:hover {
-    cursor: pointer;
-    text-decoration: none
-  }
-  
-  #svg-map a:hover path {
-    fill: #003399 !important
-  }
-  
-  #svg-map .circle {
-    fill: #66ccff
-  }
-  
-#svg-map a:hover .circle {
-  fill: #003399 !important;
-  cursor: pointer
-}
-
 .back{
   background-color: rgb(31, 10, 88);
   display: flex;
   text-align: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 80vh;
   width: 100%;
   color: white;
   border-radius: 3px;
   margin: 10px 0 ;
 }
 
-@media only screen and (max-width: 850px){
+@media only screen and (max-width: 992px){
   div.d-flex{
     display: flex;
     flex-direction: column;

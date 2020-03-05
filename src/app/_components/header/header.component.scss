@@ -39,7 +39,7 @@ div.d-inline-block a{
   outline: none !important;
 }
 
-a{
+li a{
   color: #fff;
   text-decoration: none;
   font-size: 0.7rem;
@@ -51,39 +51,37 @@ a{
   
 }
 
-.estilizacao{
-  a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-family: "Ubuntu";
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: 700;
-    padding: 0 5px;
-
-  }
-
-  a:hover {
-    color: rgb(0, 0, 0);
-  }
-  
-}
-
-
-
 a:hover{
   color: rgb(0, 0, 0);
 
 }
 
+div.estilizacao > a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-family: "Ubuntu";
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0 5px;
+}
+
+div.estilizacao a i  {
+  
+  margin-right: 5px;
+}
+
 
 div.a-color{
   a{
-    color: #fff
+    color: #fff;
+    background: transparent;
+
+    
   }
   a:hover{
-    color: #000
+    color: rgb(255,106,19)
   }
 }
 
@@ -100,6 +98,7 @@ div.a-color{
   border-radius: 40px;
   cursor: pointer;
   background:linear-gradient(to right, rgb(255,106,19), rgb(255,221, 0));
+  margin-left: 10px;
 
 }
 
@@ -154,6 +153,5 @@ li{
     text-align: center;
     margin-bottom: 10px;
   }
-  
 
 }

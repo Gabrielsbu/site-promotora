@@ -1,9 +1,20 @@
+.back{
+    background: rgb(255,106,19);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    height: 50vh;
+    color: #fff;
+    border-radius: 3px;
+   
+}
 
 img{
     margin-top: 25px;
     width: 60%;
     height: 40%;
-}   
+}
 
 
 h4{
@@ -53,6 +64,17 @@ div.card img{
 }
 
 @media only screen and (max-width: 992px){
+    .back{
+        background: rgb(255,106,19);
+        display: flex;
+        align-items: center;
+        height: 60vh;
+        color: white;
+        border-radius: 3px;
+        min-height: 100px;
+        text-align: center;
+    }
+
     div.card{
         height: 100%;
         display: flex;
