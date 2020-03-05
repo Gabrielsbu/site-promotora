@@ -10,15 +10,15 @@
 }
 
 .back-1{
-    background-color: rgb(255, 106, 19);
-}
+    background-color: #0073cd;
+};
 
 .back-2{
-    background-color: rgb(250, 182, 35);
+    background-color: #3a91d4;
 }
 
 .back-3{
-    background-color: rgb(224, 139, 41);
+    background-color: #5ea2d6;
 }
 
 .back-passo{
@@ -26,7 +26,7 @@
 }
 
 .back-servicos{
-    background-color: #0073cd;
+    background-color: rgb(255, 106, 19);
     height: 90vh;
 }
 
@@ -50,10 +50,19 @@ div.card {
     height: 160px;
     padding: 4px;
 }
-
+div.card{
+    .icon{
+        background: rgb(255,221, 0);
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        padding: 30px 30px;
+        
+    }
+    
+}
 .icon{
-    background: #7c0606;
-
+    background: rgb(255, 106, 19);
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -103,6 +112,12 @@ div.card {
     align-items: center;
 }
 
+.back-passo{
+    background: #fff !important;
+    height: 100%;
+}
+
+
 @media only screen and (max-width: 992px){
     .back{
         background: rgb(255, 106, 19);
@@ -122,10 +137,7 @@ div.card {
         margin-top: 10px;
     }
 
-    .back-passo{
-        height: 100%;
-    }
-
+    
     .back-servicos{
         height: 100%;
     }
