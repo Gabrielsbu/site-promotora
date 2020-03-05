@@ -3,6 +3,9 @@
   
 }
 
+div.d-inline-block a{
+  font-weight: 800;
+} 
 
 .btn:focus {
   outline: none !important;
@@ -21,7 +24,7 @@ a{
 
 div.a-color{
   a{
-    color: rgb(255,106,19)
+    color: #fff
   }
   a:hover{
     color: #000
@@ -52,6 +55,12 @@ div.a-color{
 
 }
 
+.background-drop{
+  background: rgba(1, 1, 1, 0.3);
+  border:none
+
+}
+
 .button-funcionalidades{
   border:none;
   width: 180px;
@@ -76,25 +85,10 @@ div.a-color{
  box-shadow: none;
 }
 
-.dark-modal .modal-content {
-  background-color: #292b2c;
-  color: white;
-}
-.dark-modal .close {
-  color: white;
-}
-.light-blue-backdrop {
-  background-color: #5cb3fd;
-}
-
-
 li{
   margin-left: 10px;
   font-weight: 300;   
 }
-
-
-
 
 @media only screen and (max-width: 992px){
   .inverter-logo{
@@ -112,7 +106,6 @@ li{
     border:none
 
   }
-
   .background-drop a{
     color: #fff
 

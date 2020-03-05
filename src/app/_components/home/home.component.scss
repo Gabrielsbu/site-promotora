@@ -2,28 +2,11 @@
     background: url("../../../assets/barrens-site.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    display: flex;
-    align-items: center;
-    height: 70vh;
+   
+    height: 28rem;
     color: black;
     border-radius: 3px;
     
-}
-
-.icons{
-    border: 1px solid #BBB;
-    margin: 50px auto 15px;
-    border-radius: 50%;
-    width: 160px;
-    height: 160px;
-    padding: 4px;
-}
-
-div.card {
-    margin: 15px 0;
-    height: 400px;
-    border-radius: 10px;
-    color: #fff
 }
 
 .back-1{
@@ -36,6 +19,36 @@ div.card {
 
 .back-3{
     background-color: rgb(224, 139, 41);
+}
+
+.back-passo{
+    height: 80vh;
+}
+
+.back-servicos{
+    background-color: #0073cd;
+    height: 100vh;
+}
+
+div.back-servicos h2{
+    color: white;
+    font-weight: 800;
+}
+
+div.card {
+    margin: 15px 0;
+    height: 400px;
+    border-radius: 10px;
+    color: #fff
+}
+
+.icons{
+    border: 1px solid #BBB;
+    margin: 50px auto 15px;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    padding: 4px;
 }
 
 .icon{
@@ -53,19 +66,6 @@ div.card {
    
 }
 
-.back-passo{
-    height: 80vh;
-}
-
-.back-servicos{
-    background-color: #0073cd;
-    height: 100vh;
-}
-
-div.back-servicos h2{
-    color: white;
-    font-weight: 800;
-}
 .btn-parceiro{
     
     background: rgb(255,221, 0);
@@ -97,39 +97,29 @@ div.back-servicos h2{
 
 }
 
-
 .alinhamento-central{
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
+@media only screen and (max-width: 992px){
+    .back{
+        background: rgb(255, 106, 19);
+        height: auto;
+        color: white;
+        border-radius: 3px;
+        padding: 35px 0;
+    }
 
-@media only screen and (max-width: 1024px){
     .button-produtos{
         width: 100%;
         height: 40px;
         margin-top: 15px
-       
     }
-
-    .back{
-        background: rgb(255, 106, 19);
-        display: flex;
-        align-items: center;
-        height: 50vh;
-        color: white;
-        border-radius: 3px;
-        min-height: 100px;
-    }
-   
-    
+ 
     .teste{
         margin-top: 10px;
-    }
-
-    .teste1{
-       margin-top: 10px
     }
 
     .back-passo{
