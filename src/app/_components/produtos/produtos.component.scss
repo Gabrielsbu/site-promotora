@@ -4,10 +4,15 @@
     background-size: 100%;
     display: flex;
     align-items: center;
-    height: 50vh;
+    height: auto;
     color: #fff;
     border-radius: 3px;
    
+}
+
+.img{
+    width: 70vh;
+    height: auto;
 }
 
 img{
@@ -68,7 +73,7 @@ div.card img{
         background: rgb(255,106,19);
         display: flex;
         align-items: center;
-        height: 60vh;
+        height: auto;
         color: white;
         border-radius: 3px;
         min-height: 100px;
