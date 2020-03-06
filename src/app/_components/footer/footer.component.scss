@@ -1,7 +1,17 @@
 
+.back{
+    background: rgb(14, 6, 2);
+    display: flex;
+    align-items: center;
+    height: auto;
+    color: #fff;
+    border-radius: 3px;
+    font-family: 'Roboto';
+   
+}
 
 .back-2{
-  background: rgb(255, 106, 19);
+  background: #fff;
   min-height: 5vh;
 }
 
@@ -13,9 +23,26 @@ div.text-center h6{
 
 a{
   text-decoration: none ;
-  color: black;
+  color: #fff;
 }
 
 a.m-2 i {
-  color: rgb(55, 19, 255);
+  color: rgb(255,106,19);
+}
+
+.color-a{
+  color: #000
+}
+
+@media only screen and (max-width: 992px){
+  .back{
+      background: rgb(14, 6, 2);
+      display: flex;
+      align-items: center;
+      height: auto;
+      color: white;
+      border-radius: 3px;
+      min-height: 100px;
+      text-align: center;
+  }
 }
