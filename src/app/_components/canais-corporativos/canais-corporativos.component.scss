@@ -1,0 +1,92 @@
+.back{
+    background: rgb(255,106,19);
+    display: flex;
+    align-items: center;
+    height: auto;
+    color: #fff;
+    border-radius: 3px;
+    font-family: 'Roboto';
+   
+}
+
+
+.img{
+    width: 70vh;
+    height: auto;
+}
+
+img{
+    margin-top: 25px;
+    width: 60%;
+    height: 40%;
+}
+
+
+h4{
+    margin-top: 25px;
+}
+.back-cartao{
+    background-color: rgb(255, 106, 19);
+    height: 65vh;
+    
+}
+
+.back-emprestimo{
+    background-color: rgb(224, 139, 41);
+    height: 65vh;
+    
+}
+
+
+
+.back-homem{
+    background-color: rgb(228, 111, 15);
+    height: 65vh;
+    
+}
+
+.back-seguro{
+    background-color: rgb(250, 182, 35);
+    height: 65vh;
+    
+}
+
+div.card{
+    border-radius: 15px;
+    margin-top: 10px;
+   
+}
+
+p.card-body{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+div.card img{
+    height: 40%;
+    width: 40%;
+}
+
+@media only screen and (max-width: 992px){
+    .back{
+        background: rgb(255,106,19);
+        display: flex;
+        align-items: center;
+        height: auto;
+        color: white;
+        border-radius: 3px;
+        min-height: 100px;
+        text-align: center;
+    }
+
+    div.card{
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 25px;
+        text-align: center;
+        color: #fff
+    }
+}
