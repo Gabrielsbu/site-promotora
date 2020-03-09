@@ -1,6 +1,6 @@
 
 .back{
-    background: rgb(14, 6, 2);
+    background: #181818;
     display: flex;
     align-items: center;
     height: auto;
@@ -10,8 +10,26 @@
    
 }
 
+
+
+.c-1{
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  border-radius: 5px;
+  height: 28px;
+ 
+}
+
+.c-2{
+  color: #385898
+}
+
+.c-3{
+  color: rgb(0, 115, 176)
+}
+
 .back-2{
-  background: #fff;
+  background: #000;
+  color: #fff;
   min-height: 5vh;
 }
 
@@ -26,16 +44,9 @@ a{
   color: #fff;
 }
 
-a.m-2 i {
-  color: rgb(255,106,19);
-}
-
-.color-a{
-  color: #000
-}
 
 .freepik a{
-  font-size: 12px;
+  font-size: 10px;
 }
 
 li p i {

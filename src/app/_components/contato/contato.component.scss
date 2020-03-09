@@ -3,10 +3,20 @@
   height: auto;
 }
 
-.lado-lado{
-  display: flex;
-  flex-direction: row ;
+
+h3{
+  font-weight: 800;
 }
+
+div.mt-5 i{
+  color: rgb(255, 106, 19);
+  padding: 0 5px;
+}
+
+div.mt-5 h5 {
+  margin-top: 35px;
+}
+
 
 img{
   height: auto;
@@ -78,12 +88,11 @@ ngb-rating:focus{
   box-shadow: 0px 0px 4px -2px ;
 
 }
-
-.ajustar-button{
- 
+div.form-group input{
   width: 100%;
   height: 50px;
 }
+
 
 .esq{
   display: flex;

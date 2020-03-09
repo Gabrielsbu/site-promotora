@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+
 import { bounceInUp } from 'ng-animate';
 import { trigger, transition, useAnimation } from '@angular/animations';
+
 
 import * as AOS from 'aos';
 
@@ -17,19 +20,38 @@ import * as AOS from 'aos';
 })
 export class ContatoComponent implements OnInit {
 
-  qtdEstrelas = 3;
+  motivo: any;
   bounceInUp: any;
 
-  constructor() {
-    
-   }
+  dadosDoForm: FormGroup;
+
+  constructor(
+    private _formBuilder: FormBuilder
+  ) { }
 
   ngOnInit() {
+    this.dadosDoForm = this.gerarForm();
     AOS.init();
+    
   }
 
-  EnviarForm() {
-    alert('sucess');
+  gerarForm(): FormGroup {
+    return this._formBuilder.group({
+      nomeCompleto: ['', [Validators.required]],
+      email: ['', [Validators.required]],
+      ddd: '',
+      telefone: '',
+      mensagem: ''
+
+    });
+  }
+
+  postContato(){
+    console.log('Dados: ', this.dadosDoForm)
+  }
+
+  limparForm(){
+    this.dadosDoForm.reset();
   }
 
 }

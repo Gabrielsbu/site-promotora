@@ -1,0 +1,10 @@
+export enum MotivoEnum {
+
+    PARCEIRO = 'PARCEIRO',
+    DUVIDA = 'DUVIDA',
+    ELOGIO = 'ELOGIO',
+    INFORMACAO = 'INFORMACAO',
+    RECLAMACAO = 'RECLAMACAO',
+    SUGESTAO = 'SUGESTAO'
+
+}

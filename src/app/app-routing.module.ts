@@ -46,6 +46,11 @@ const routes: Routes = [
   {
     path: 'canais-corporativos', loadChildren: () =>
     import('./_components/canais-corporativos/canais-corporativos.module').then(m => m.CanaisCorporativosModule)
+  },
+
+  {
+    path: 'links', loadChildren: () =>
+    import('./_components/links/links.module').then(m => m.LinkModule)
   }
 ];
 

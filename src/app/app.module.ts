@@ -21,7 +21,6 @@ import { RouterModule } from '@angular/router';
     FooterComponent,
     FuncionalidadesComponent,
     SubmenuComponent,
-
   ],
   imports: [
     BrowserModule,
