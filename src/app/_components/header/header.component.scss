@@ -3,6 +3,9 @@
   
 }
 
+a.dropdown-item{
+  padding: 5px 25px !important;
+}
 
 li{
   padding: 0 25px;
@@ -152,6 +155,11 @@ li{
   a.dropdown-item{
     text-align: center;
     margin-bottom: 10px;
+    
+  }
+
+  li a{
+    padding: 10px 0;
   }
 
 }
