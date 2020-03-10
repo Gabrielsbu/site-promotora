@@ -2,15 +2,21 @@
   background-color: rgb(255,106,19);
   
 }
+ul.navbar-nav li{
+  padding: 0 15px;
+}
 
 a.dropdown-item{
   padding: 5px 25px !important;
 }
 
-li{
-  padding: 0 25px;
+.padding-1{
+  padding-right: 25px
 }
 
+.padding-2{
+  padding-right: 25px;
+}
 section{
   height: 1.8rem;
 }
