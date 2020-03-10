@@ -16,9 +16,6 @@ div.config-header a {
     color: #fff
 }
 
-.back-passo{
-    height: 80vh;
-}
 
 .back-servicos{
     background-color: rgb(255, 106, 19);
@@ -27,7 +24,7 @@ div.config-header a {
 
 div.back-servicos h2{
     color: white;
-    font-weight: 800;
+    font-weight: 400;
 }
 
 div.card {
@@ -57,7 +54,7 @@ div.card{
     
 }
 .icon{
-    background: rgb(255, 106, 19);
+    background:linear-gradient(to right, rgb(255,106,19), rgb(255, 179, 0));
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -66,22 +63,25 @@ div.card{
 }
 
 .icon:hover{
-    background: rgb(255, 106, 19);
+    background: #181818;
+    transition: all 0.3s;
    
 }
 
 .btn-parceiro{
     
-    background: rgb(255,221, 0);
+    background: #181818;
+    color: #fff;
     height: 100%;
     width: 40%;
 }
 
 .btn-parceiro:hover{
     
-    background: rgb(255, 106, 19);
-    
+    background: linear-gradient(to right, rgb(255,106,19), rgb(255, 179, 0));
+    transition: all 0.1s;
 }
+
 
 .back-entre-contato{
     height: 90vh;
@@ -97,7 +97,7 @@ div.card{
 
 .porque-f5 h2{
     color: rgb(255, 106, 19) ;
-    font-weight: 800;
+    font-weight: 400;
 
 }
 
@@ -109,7 +109,7 @@ div.card{
 
 .back-passo{
     background: #fff !important;
-    height: 100%;
+    height: 100vh;
 }
 
 
@@ -139,9 +139,15 @@ div.card{
 
     .btn-parceiro{
     
-        background: rgb(255,221, 0);
+        background: linear-gradient(to right, rgb(255,106,19), rgb(255, 179, 0));
         height: 100%;
         width: 100%
+    }
+
+    .back-passo {
+        height: auto;
+        padding: 50px 0;
+        
     }
 
 

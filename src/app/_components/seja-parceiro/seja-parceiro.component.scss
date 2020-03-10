@@ -12,13 +12,36 @@
  
 }
 
+
 .img{
-    width: 60vh;
-    height: auto;
+    width: auto;
+    height: 60vh;
+}
+
+.borda-formulario{
+  
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px -2px ;
+    
+  
+}
+
+form{
+    padding: 40px;
+}
+
+div.form-row{
+    padding: 5px 0;
+
 }
 
 h3 {
     font-weight: 800;
+}
+
+h2 {
+    font-weight: 500;
+    color: rgb(255,106,19);
 }
 
 div.card{

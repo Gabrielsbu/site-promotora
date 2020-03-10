@@ -1,0 +1,92 @@
+.back{
+    background: rgb(255,106,19);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    height: auto;
+    color: #fff;
+    border-radius: 3px;
+    font-family: 'Roboto';
+   
+}
+
+.back img{
+    width: 70vh;
+    height: auto;
+}
+
+h3{
+    font-weight: 800;
+}
+
+h4{
+    margin-top: 25px;
+}
+
+
+.back-homem{
+    background-color: rgb(228, 111, 15);
+    height: auto;
+    
+}
+
+.back-seguro{
+    background-color: rgb(250, 182, 35);
+    height: 30vw;
+    
+    
+}
+
+div.card{
+    border-radius: 15px;
+    margin-top: 10px;
+   
+}
+
+p.card-body{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+div.card img{
+    margin: 10px 0;
+    height: 40%;
+    width: 40%;
+}
+
+.img-prod{
+    width: 60%;
+    height: auto ;
+}
+
+@media only screen and (max-width: 992px){
+    .back{
+        background: rgb(255,106,19);
+        display: flex;
+        align-items: center;
+        height: auto;
+        color: white;
+        border-radius: 3px;
+        min-height: 100px;
+        text-align: center;
+    }
+
+    div.card{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 25px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    div.card img{
+        margin: 10px 0;
+        height: auto;
+        width: 35vh;
+        margin-top : 25px;
+    }
+}

@@ -35,4 +35,7 @@ export class HeaderComponent implements OnInit {
     this.isCollapsed = !this.isCollapsed;
   }
 
+  teste(event) {
+    console.log(event);
+  }
 }

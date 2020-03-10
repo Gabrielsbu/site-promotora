@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SejaParceiroFacadeService } from '../seja-parceiro/services/seja-parceiro-facade.service';
 
 @Component({
   selector: 'app-produtos',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProdutosComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _sejaParceiroFacade: SejaParceiroFacadeService) { }
 
   ngOnInit() {
+    console.log(this._sejaParceiroFacade.sejaParceiroContato);
   }
 
 }

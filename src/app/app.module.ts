@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
+import { HttpClientModule }    from '@angular/common/http';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -11,7 +13,6 @@ import { HeaderComponent } from './_components/header/header.component';
 import { FooterComponent } from './_components/footer/footer.component';
 import { FuncionalidadesComponent } from './_components/funcionalidades/funcionalidades.component';
 import { SubmenuComponent } from './_components/submenu/submenu.component';
-import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { RouterModule } from '@angular/router';
     FontAwesomeModule,
     NgbModule,
     BrowserAnimationsModule,
+    HttpClientModule
 
   ],
   exports: [
